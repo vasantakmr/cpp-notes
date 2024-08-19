@@ -64,15 +64,37 @@ Example: a = 10;
 /=
 %=
 
+Ternary Operator:
 
-Ternary operator
+Also known aasa conditional operator. 
 
-? :
+denoted as ?:
 
-Example: 
+example: 
 
-int age = 10;
+string isEligibletoVote = (age>=18)? "Is Eligible to vote" : "Is not Eligible to vote";
 
-string isEligible;
 
-isEligible = (age>=18) ? "The person is eligible to vote" : "The person is not eligible to vote";
+Increment/Decrement Operators:
+
+Used to increase/decrease the value by 1.
+
+Increment   ++      a = a+1
+Decrement   --      a = a-1
+
+
+Pre - Increment         ++a     Increase and then use
+Post - Increment        a++     Use and then increase
+
+
+Pre - Decrement         --a     Decrease and then Use
+Post - Decrement        a--     Use and then decrease
+
+
+Operator precedence:
+
+Decide on the order of computation if multiple operators are in the same expression.
+
+Operator Associativity:
+
+When multiple operators are under same prececdence level, then we use associativity to decide on the computation order.

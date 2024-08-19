@@ -4,9 +4,16 @@ using namespace std;
 
 int main() {
     
-    int a = 22, b = 21;
 
-    cout<<(a^b)<<endl;
+    int k=3;
+    
+    string a = (4==3)?"y":"n";
+    string b = (k==++k)?"y":"n";
+    
+    cout<<a<<" "<<b<<endl;
+    
+    cin>>k;
+   
 
     return 0;
 }
