@@ -1,13 +1,18 @@
 /*
-    Find the max number of equal variables.
+    Find if the given year is a leap year.
 
-    Input 12 12 23
+    Input 2004
 
-    output 2;
+    output "Leap Year";
 
-    // 34 23 34     2
-    // 23 12 12     2
-    // 12 13 14     1 
+    Input 2003
+
+    output "Not a Leap Year";
+
+    A year is a leap year if:
+    1. it is divisible by 4 and
+    2. It is not divible by 100 but it can be divisible by 400;
+
 */
 
 #include<bits/stdc++.h>
@@ -15,21 +20,19 @@
 using namespace std;
 
 int main() {
-    int a, b, c;
-    cout<<"Enter 3 numbers: ";
-    cin>>a>>b>>c;
-    int ans = 1;
+    int year;
+    cin>>year;
 
-    if(a == b || a == c || b == c) {
-        ans++;
+    bool isLeapYear = false;
+
+    
+
+    if((year % 4 == 0) && ((year%100!=0) || year%400 == 0)) {
+        isLeapYear = true;
     }
+    
 
-    if(a == b && b == c) {
-        ans++;
-    }
-
-    cout<<ans<<endl;
-
+    cout<<isLeapYear<<endl;
 
     return 0;
 }
