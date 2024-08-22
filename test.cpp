@@ -20,19 +20,18 @@
 using namespace std;
 
 int main() {
-    int year;
-    cin>>year;
+    int n, m;
 
-    bool isLeapYear = false;
+    cin>> n>>m;
 
-    
-
-    if((year % 4 == 0 && year%100!=0) || year % 400 == 0) {
-        isLeapYear = true;
+    if(n%2==0 || m %2 == 0) {
+        cout<<"YES";
+    } else {
+        cout<<"NO";
     }
-    
 
-    cout<<isLeapYear<<endl;
+    cout<<((n%2 ==0) || (m%2 ==0)?"YES": "NO");
 
+    cout<<(((n*m)%2 ==0)?"YES": "NO");
     return 0;
 }
