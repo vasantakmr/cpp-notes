@@ -6,13 +6,10 @@ int main() {
     
 
     int k=3;
+    int b = 10;
     
-    string a = (4==3)?"y":"n";
-    string b = (k==++k)?"y":"n";
+    cout<<k+b<<endl;
     
-    cout<<a<<" "<<b<<endl;
-    
-    cin>>k;
    
 
     return 0;

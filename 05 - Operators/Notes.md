@@ -41,7 +41,7 @@ The logical operators are applied on conditions.
 
 4. Bitwise Operators:
 
-a. binary OR            |
+a. Binary OR            |
 b. Binary And           &
 c. Binary XOR           ^
 d. 1's Complement       ~
@@ -58,7 +58,7 @@ Assignment Operators:
 
 Example: a = 10;
 
-+=
++=          // a += b;    // a = a+b; 
 -=
 *=
 /=
@@ -66,7 +66,7 @@ Example: a = 10;
 
 Ternary Operator:
 
-Also known aasa conditional operator. 
+Also known as a conditional operator. 
 
 denoted as ?:
 
