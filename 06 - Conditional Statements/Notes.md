@@ -27,3 +27,22 @@ if(condition) {
 else {
     // statements to be executed when the condition results in false.
 }
+
+
+Else If: 
+
+syntax: 
+
+if(condition) {
+    // execute these sttements upon condition is true;
+} else if(condition) {
+    // execute these sttements upon condition is true;
+} else if(condition) {
+    // execute these sttements upon condition is true;
+} else if(condition) {
+    // execute these sttements upon condition is true;
+} else {
+
+}
+
+

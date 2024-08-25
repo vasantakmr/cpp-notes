@@ -1,37 +1,22 @@
-/*
-    Find if the given year is a leap year.
-
-    Input 2004
-
-    output "Leap Year";
-
-    Input 2003
-
-    output "Not a Leap Year";
-
-    A year is a leap year if:
-    1. it is divisible by 4 and
-    2. It is not divible by 100 but it can be divisible by 400;
-
-*/
-
 #include<bits/stdc++.h>
 
 using namespace std;
 
-int main() {
-    int n, m;
+int main()
+{
+    int n, m, k;
 
-    cin>> n>>m;
+    cout<<"Enter n, m, k:";
 
-    if(n%2==0 || m %2 == 0) {
+    cin>>n>>m>>k;
+
+    if(k%n==0 || k%m == 0) {
         cout<<"YES";
-    } else {
+    } else{
         cout<<"NO";
     }
+    
+    // cout<<((k%n==0 || k%m == 0)? "YES": "NO")<<endl;
 
-    cout<<((n%2 ==0) || (m%2 ==0)?"YES": "NO");
-
-    cout<<(((n*m)%2 ==0)?"YES": "NO");
     return 0;
 }
