@@ -23,42 +23,43 @@ int main()
 {
     int units;
     cout<<"Enter total units"<<endl;
-    cin>>units;
-    bool isSurchargeApplicable = false;
+    cin>>units; 800
+    bool isSurchargeApplicable = (units>399) ? true: false;
 
     float cost = 0; 
     
     if(units>599) {
-        isSurchargeApplicable = true;
-        int spentUnits = units - 600 + 1;
+        int spentUnits = units - 600 + 1;   800-600+1 = 201
         cost += (spentUnits) * 2.00;
-        units = units - spentUnits;
+        units = units - spentUnits;         800 - 201 = 599
         cout<<"Greater than 599"<<endl;
     }
 
     if(units>399) {
-        isSurchargeApplicable = true;
-        int spentUnits = units - 400 + 1;
+        int spentUnits = units - 400 + 1;   599 - 400 +1 = 200
         cost += (spentUnits) * 1.80;
-        units = units - spentUnits;
+        units = units - spentUnits;         599 - 200 = 399
         cout<<"Greater than 399"<<endl;
     }
 
     if(units>199) {
-        int spentUnits = units - 200 + 1;
+        int spentUnits = units - 200 + 1;   399 - 200 +1 = 200
         cost += (spentUnits) * 1.50;
-        units = units - spentUnits;
+        units = units - spentUnits;         399 - 200 = 199
         cout<<"Greater than 199"<<endl;
     }
 
     if(units<200) {
-        int spentUnits = units;
+        int spentUnits = units;             199
         cost += (spentUnits) * 1.20;
-        units = units - spentUnits;
+        units = units - spentUnits;         199 - 199 
         cout<<"Less than 200"<<endl;
     }
 
-    cost += ((15.0*cost)/100);
+    if(isSurchargeApplicable) {
+        cost += ((15.0*cost)/100);
+    }
+
     cout<<cost<<endl;
 
     return 0;
