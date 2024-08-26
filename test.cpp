@@ -4,19 +4,30 @@ using namespace std;
 
 int main()
 {
-    int n, m, k;
+    int x1, y1, x2, y2;
 
-    cout<<"Enter n, m, k:";
+    cin>>x1>>y1>>x2>>y2;
 
-    cin>>n>>m>>k;
+    int xDiff, yDiff;
 
-    if(k%n==0 || k%m == 0) {
-        cout<<"YES";
-    } else{
-        cout<<"NO";
+    xDiff = (x1-x2)
+    yDiff = (y1-y2)
+
+    if(xDiff<0) {
+        xDiff *= -1;
     }
     
-    // cout<<((k%n==0 || k%m == 0)? "YES": "NO")<<endl;
+    if(yDiff<0) {
+        yDiff *= -1;
+    }
 
+    if(x1 == x2 || y1 == y2) {  // rooks move
+        cout<<"YES"<<endl;
+    } else if(xDiff == yDiff) { // bishops move
+        cout<<"YES"<<endl;
+    } else {
+        cout<<"NO"<<endl;
+    }
+    
     return 0;
 }
