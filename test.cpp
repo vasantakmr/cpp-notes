@@ -16,15 +16,15 @@ int main()
     if(xDiff<0) {
         xDiff *= -1;
     }
-    
+
     if(yDiff<0) {
         yDiff *= -1;
     }
 
-    if(x1 == x2 || y1 == y2) {  // rooks move
-        cout<<"YES"<<endl;
-    } else if(xDiff == yDiff) { // bishops move
-        cout<<"YES"<<endl;
+    if(xDiff == 1 && yDiff == 2) {
+        cout<<"YES";
+    } else if(xDiff == 2 && yDiff == 1) {
+        cout<"YES";
     } else {
         cout<<"NO"<<endl;
     }
