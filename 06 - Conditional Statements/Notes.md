@@ -46,3 +46,23 @@ if(condition) {
 }
 
 
+Nested IfElse:
+
+if() {
+    if() {
+        if() {
+
+        } else if() {
+            
+        }
+    } else {
+
+    }
+} else {
+    if() {
+        if() {
+
+        }
+    }
+}
+
