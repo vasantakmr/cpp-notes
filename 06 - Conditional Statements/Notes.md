@@ -66,3 +66,20 @@ if() {
     }
 }
 
+
+switch(variable) {
+    case variablevalue1:
+        //code to be executed;
+        break;
+    case variablevalue2:
+        //code to be executed;
+        break;
+    case variablevalue3:
+        //code to be executed;
+        break;
+    case variablevalue4:
+        //code to be executed;
+        break;     
+    default:
+        //code to be executed;     
+}
