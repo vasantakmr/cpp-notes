@@ -1,5 +1,5 @@
 /*
-Print only even numbers between 1 to 100;
+    Print only even numbers between 1 to 100;
 */
 
 #include<iostream>

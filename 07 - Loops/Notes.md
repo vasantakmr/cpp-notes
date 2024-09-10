@@ -17,3 +17,12 @@ syntax:
 while(condition) {
     //statements;
 }
+
+
+
+Break and COntinue: 
+
+Break: To top the loop completely. 
+
+Continue: 
+To skip any iteration
