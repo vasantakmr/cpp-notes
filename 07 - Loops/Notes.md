@@ -26,3 +26,10 @@ Break: To top the loop completely.
 
 Continue: 
 To skip any iteration
+
+
+Problems:
+1. Sum of numbers from 1 to 100;
+2. X power Y
+3. Print digits of a Number
+4. Sum of Digits of a Number
