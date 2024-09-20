@@ -33,3 +33,12 @@ Problems:
 2. X power Y
 3. Print digits of a Number
 4. Sum of Digits of a Number
+
+5. Reverse of a Number
+6. Palindrome
+7. Prime Number
+
+
+Do while:
+
+do while loop executes atleast once. even if the condition is not satisfied.
