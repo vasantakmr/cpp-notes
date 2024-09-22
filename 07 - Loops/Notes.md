@@ -42,3 +42,33 @@ Problems:
 Do while:
 
 do while loop executes atleast once. even if the condition is not satisfied.
+
+
+For loop:
+
+For loop is used when i know how many iterations to be run. 
+
+syntax: 
+
+for(initialization; condition; increment/decrement) {
+
+}
+
+initialization: 
+
+int a = 0, b = 0;
+
+a = 0;
+
+condition: 
+
+increment/decrement: 
+
+i++
+i--
+
+i = i+2
+
+i = i-2
+
+i = i*2
