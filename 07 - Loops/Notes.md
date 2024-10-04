@@ -75,3 +75,13 @@ i = i*2
 
 
 Scoping in for loops
+
+
+
+1: 20
+
+i = 1;
+for(;;) {
+    if()
+    i++;
+}
