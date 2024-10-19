@@ -17,3 +17,6 @@ return_type functionName(parameters) {
 
 f(x) = x2+ x3+ 12;
 
+Types of functions:
+1. User-defined functions
+2. Pre-defined functions
