@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/DSA Course/Practice/08 - Functions",
-      "program": "d:/DSA Course/Practice/08 - Functions/build/Debug/outDebug",
+      "cwd": "d:/DSA Course/Practice/Live problems",
+      "program": "d:/DSA Course/Practice/Live problems/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

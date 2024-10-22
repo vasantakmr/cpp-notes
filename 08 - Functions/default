@@ -1,0 +1,14 @@
+#include<iostream>
+
+using namespace std;
+
+void printImage(string image) {
+    cout<<image<<endl;
+}
+
+int main() {
+
+    printImage();
+
+    return 0;
+}

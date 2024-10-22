@@ -15,3 +15,5 @@ input:
 1. cin>>
 
 2. getline()
+
+
