@@ -16,6 +16,11 @@ int main() {
     string str;
     cout<<"Enter the string"<<endl;
     getline(cin, str);
+    int a = 10;
+    a = a+6;
+    cout<<&a<<endl;
+    cout<<&str<<endl;
+
     string maxLengthString = "";
     string tempString = "";
     int currentWordLength = 0;
@@ -35,7 +40,6 @@ int main() {
     if(currentWordLength > maxLengthString.length()) {
         maxLengthString = tempString;
     }
-
     cout<<maxLengthString<<endl;
 
     return 0;
