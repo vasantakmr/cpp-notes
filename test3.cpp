@@ -1,44 +1,35 @@
-#include <iostream>
-#include <string>
+// Given a string and a character, remove all the occurrences of the character in the string
+#include <bits/stdc++.h>
 
-using namespace std;            // string str = "10.10.10.200"
+using namespace std;
 
-int main() {
-    string str;
-    bool valid = true;
+void removeOccurancesofCh(string str, char ch) {
 
-    cin >> str;
+    string ans = "";
 
-    int num = 0;
-    int dots = 0;
-    string temp = "";
-    for (int i = 0; i < str.length()+1; i++) {
-        if (str[i] >= '0' && str[i] <= '9') {
-            temp = temp + str[i];
-        } 
-        //10.0.0.5
-        if (str[i] == '.' || str[i] == '\0') {
-            if ((stoi(temp) >= 0 && stoi(temp) < 256) && (str[i + 1] != '0' && str[i + 1] != '.')) {
-                num = 0;
-                dots++;
-            } else {
-                valid = false;
-                break;
-            }
-        } else {
-            valid = false;
-            break;
+    for(int i =0; i<str.length(); i++) {
+        if(str[i] != ch) {
+            ans = ans + str[i];
         }
     }
 
-    if (dots != 3) {
-        valid = false;
-    }
+    cout<<ans<<endl;
 
-    if (valid) {
-        cout << "valid" << endl;
-    } else {
-        cout << "invalid" << endl;
+}
+
+int main()
+{
+    vector<pair<string, char>> arr;
+
+    arr.push_back(make_pair("helloworld", 'h'));
+    arr.push_back(make_pair("helloworld", 'w'));
+    arr.push_back(make_pair("helloworld", 'e'));
+    arr.push_back(make_pair("helloworld", 'o'));
+    arr.push_back(make_pair("helloworld", 'd'));
+    arr.push_back(make_pair("helloworld", 'l'));
+
+    for(int i = 0; i<arr.size(); i++) {
+        removeOccurancesofCh(arr[i].first, arr[i].second);
     }
 
     return 0;
