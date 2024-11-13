@@ -26,3 +26,18 @@ Reading/Accessing an element in array:  variableName[index]
 Size Calculation: sizeof(studentMarks)/sizeof(studentMarks[0]);
 
 Updating an element of an array:  
+
+
+
+Sorting:
+
+int arr[5];
+
+sort(arr, arr+5, greater<int>());
+
+string str = "Gurucodes";
+
+sort(str.begin(), str.end(), greater<char>());
+
+
+
