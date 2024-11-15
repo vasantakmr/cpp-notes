@@ -39,5 +39,5 @@ string str = "Gurucodes";
 
 sort(str.begin(), str.end(), greater<char>());
 
-
+Vector is a dynamic array, meaning, it can change its size upon insertion or deletion. 
 
