@@ -4,7 +4,8 @@ using namespace std;
 
 void isPrime(int x) {
     bool isPrimeFlag = true;
-
+    x = 100; 
+    x- 30000;
     for(int i = 2; i<x; i++) {
         if(x%i == 0) {
             isPrimeFlag = false;

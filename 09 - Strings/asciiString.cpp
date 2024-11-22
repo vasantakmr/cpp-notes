@@ -11,7 +11,7 @@ int main() {
             str[i] = str[i] + 32;
         }
     }
-    
+
     cout<<str<<endl;
 
     return 0;
