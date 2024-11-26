@@ -2,6 +2,7 @@
 https://leetcode.com/problems/sort-colors/
 */
 
+#include <vector>
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
